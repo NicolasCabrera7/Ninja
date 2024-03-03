@@ -22,3 +22,18 @@ class Ninja {
         console.log("¡Salud incrementada en 10!");
     }
 }
+
+
+class Sensei extends Ninja{
+    constructor(nombre){
+        super(nombre, 200);
+        this.velocidad = 10;
+        this.fuerza = 10;
+        this.sabiduria = 10;
+    }
+
+    speakWisdom() {
+        super.drinkSake();
+        console.log("Lo que un programador puede hacer en un mes, dos programadores pueden hacerlo en dos meses.");
+    }
+}
